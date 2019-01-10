@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 var myRequest = new Request(input[, init]);
+var myMode
 
 fetch('https://anapioficeandfire.com/api/books').then(function(response) {
   return response.Books();
