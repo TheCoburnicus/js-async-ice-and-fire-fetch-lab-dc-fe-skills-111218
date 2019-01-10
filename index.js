@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //var myRequest = new Request(input[, init]);
 //var myMode = myRequest.mode;
 
-fetch('https://anapioficeandfire.com/api/books').then(function(response) {
-  response.json
-}).then(function(response) {
-  
-}
+fetch('https://anapioficeandfire.com/api/books')
+  .then(resp => resp.json())
+  .then(json => console.log(json));
