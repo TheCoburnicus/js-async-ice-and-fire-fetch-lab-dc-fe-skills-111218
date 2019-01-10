@@ -19,10 +19,21 @@ document.addEventListener('DOMContentLoaded', function() {
 //var myRequest = new Request(input[, init]);
 //var myMode = myRequest.mode;
 
-fetch('https://anapioficeandfire.com/api/characters/')
+fetch('https://anapioficeandfire.com/api/houses/')
   .then(resp => resp.json())
   .then(json => console.log(json));
   
 document.addEventListener('DOMContentLoaded', function() {
   renderBooks()
 })
+fetch('https://anapioficeandfire.com/api/books/5')
+  .then(resp => resp.json())
+  .then(json => renderBooks(json));
+  
+document.addEventListener('DOMContentLoaded', function() {
+  renderBooks()
+})
+fetch('https://anapioficeandfire.com/api/books/5')
+  .then(resp => resp.json())
+  .then(json => renderBooks(json));
+  
