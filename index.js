@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //var myMode = myRequest.mode;
 
 fetch('https://anapioficeandfire.com/api/books').then(function(response) {
-  return response.Books();
+  response.json
 }).then(function(response) {
   
 }
