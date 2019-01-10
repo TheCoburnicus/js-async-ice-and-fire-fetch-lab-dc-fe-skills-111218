@@ -1,6 +1,6 @@
 function fetchBooks() {
   //write fetch request to the Game of Thrones API
-  //
+  //Find in Browser Console--All Houses in GoT; 5th book in series; 1031st character in series//
 }
 
 function renderBooks(json) {
