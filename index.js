@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //var myRequest = new Request(input[, init]);
 //var myMode = myRequest.mode;
 
-fetch('https://anapioficeandfire.com/api/characters/1031st')
+fetch('https://anapioficeandfire.com/api/characters/1031')
   .then(resp => resp.json())
   .then(json => console.log(json));
   
