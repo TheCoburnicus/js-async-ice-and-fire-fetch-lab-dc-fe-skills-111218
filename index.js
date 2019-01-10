@@ -12,22 +12,22 @@ fetch('https://anapioficeandfire.com/api/books/')
   .then(resp => resp.json())
   .then(json => console.log(json));
   
-document.addEventListener('DOMContentLoaded', function() {
-  renderBooks()
-})
+
 fetch('https://anapioficeandfire.com/api/books/5')
   .then(resp => resp.json())
   .then(json => renderBooks(json));
   
-document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks()
-})
+
 fetch('https://anapioficeandfire.com/api/characters/1031')
   .then(resp => resp.json())
   .then(json => fetchBooks(json));**/
   
   
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  renderBooks()
+})
 
 function renderBooks(json) {
   const main = document.querySelector('main')
