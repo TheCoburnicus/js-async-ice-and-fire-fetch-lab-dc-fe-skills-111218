@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
 })
 
-var myRequest = new Request(input[, init]);
-var myMode = myRequest.mode;
+//var myRequest = new Request(input[, init]);
+//var myMode = myRequest.mode;
 
 fetch('https://anapioficeandfire.com/api/books').then(function(response) {
   return response.Books();
