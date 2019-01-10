@@ -16,4 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 fetch('https://anapioficeandfire.com/api/books').then(function(response) {
-  return response.blob();
+  return response.Books()
