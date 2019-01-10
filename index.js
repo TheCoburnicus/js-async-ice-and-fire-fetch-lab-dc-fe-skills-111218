@@ -8,7 +8,7 @@ fetch('https://anapioficeandfire.com/api/books/')
 //var myRequest = new Request(input[, init]);
 //var myMode = myRequest.mode;
 
-/**fetch('https://anapioficeandfire.com/api/houses/')
+fetch('https://anapioficeandfire.com/api/houses/')
   .then(resp => resp.json())
   .then(json => console.log(json));
   
@@ -20,13 +20,13 @@ fetch('https://anapioficeandfire.com/api/books/5')
 
 fetch('https://anapioficeandfire.com/api/characters/1031')
   .then(resp => resp.json())
-  .then(json => fetchBooks(json));**/
+  .then(json => fetchBooks(json));
   
   
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  renderBooks()
+  fetchBooks()
 })
 
 function renderBooks(json) {
